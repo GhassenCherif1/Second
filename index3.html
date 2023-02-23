@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>to do</title>
+        <style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+    
+            input[type="number"] {
+                width: 50px;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+            </style>
+    </head>
+    <body>
+        <div id="ghayth"> </div>
+        <form>
+            
+            <label for="name">name:</label>
+            <input type="text" id="textday" name="text" style="width: 150px;">
+            <label for="to_do">Task:</label>
+            <input type="text*" id="to_do" name="do" />
+            <button (onclick)="create" type="submit" value="Envoyer" id="but">submit</button>
+        </form>
+        
+        <script>
+            const buto=document.getElementById('but')
+            const nom=document.getElementById('textday');
+            const lim=document.getElementById("ghayth");
+            create(){
+                lim.innerHTML+=`<p>hello</p> <button>hiiii</button>`;
+            }
+
+        </script>
+    </body>
+</html>

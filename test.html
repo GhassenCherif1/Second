@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Liste avec couleurs aléatoires</title>
+    <style>
+      ul {
+        cursor: pointer;
+      }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1>Liste des elements</h1>
+    <ol>
+      <ul>element 1</ul>
+      <ul>element 2</ul>
+      <ul>element 3</ul>
+    </ol>
+    <script>
+      function getRandomColor() {
+        var color = "#";       
+        color += Math.floor(Math.random()*16777215).toString(16);;
+        return color;
+      }
+      var elements = document.getElementsByTagName("ol")[0];
+      elements.addEventListener("click",function() {
+          event.target.style.color = getRandomColor();
+        });
+    </script>
+  </body>
+</html>
